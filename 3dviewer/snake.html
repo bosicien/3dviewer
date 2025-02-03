@@ -36,7 +36,7 @@
         
         // Specify the scale for the model
         const modelScale = 0.3 // Change this value to scale the model
-        loader.load('https://github.com/bosicien/3dviewer/blob/main/3dviewer/public/models/yearofthesnake.glb', (gltf) => {
+        loader.load('public/models/yearofthesnake.glb', (gltf) => {
             gltf.scene.scale.set(modelScale, modelScale, modelScale); // Scale the model
             scene.add(gltf.scene);
         }, undefined, (error) => {
